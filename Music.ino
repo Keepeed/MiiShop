@@ -1,3 +1,4 @@
+\\notas\\
 #define NOTE_B0  31
 #define NOTE_C1  33
 #define NOTE_CS1 35
@@ -88,7 +89,7 @@
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
 #define REST      0
-
+\\array com notas
 int mishopnotes[] = {
 NOTE_D4 ,NOTE_D4 ,NOTE_D4 ,NOTE_D4 ,NOTE_D4 ,0 ,
 NOTE_D4 ,NOTE_D4 ,NOTE_D4 ,NOTE_D4 ,NOTE_D4 ,0 ,
@@ -101,6 +102,7 @@ NOTE_G4, NOTE_FS4, 0, NOTE_FS4, NOTE_A4, NOTE_E4 ,0 ,NOTE_DS4 ,NOTE_E4, NOTE_FS4
 NOTE_B4, 0, NOTE_E4, NOTE_E4, 0, NOTE_B4, 0, 
 NOTE_AS4, 0, NOTE_DS4, NOTE_DS4, 0, NOTE_AS4,
 NOTE_A4};
+\\array com a duração das notas
 int mishopduration[] = {
   8,8,8,8,8,8,
   8,8,8,8,8,8,
@@ -117,6 +119,7 @@ void setup() {
 }
 
 void loop() {
+  \\loop que percorre as arrays de nota e duração e da o autput de ambos na porta oito
   while(1){
    delay(500);
    for(int music = 0; music < 100; music++){
